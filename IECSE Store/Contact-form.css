@@ -1,0 +1,184 @@
+/*
+BASIC OVERVIEW
+
+1.BACKGROUND GRADIENT
+2.FLAT STYLE BUTTONS
+3.BOTTOM BORDER INPUT
+COLOR CHANGE ON HOVER
+ */
+ *, *:before, *:after {
+   box-sizing: border-box;
+ }
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+p{
+margin: 0;
+padding: 0;
+}
+
+.outer-container{
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(to right top, #36EBAF 0%, #36CFCF 100%);
+
+}
+
+
+
+input{
+	background-color: transparent;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #2196F3;
+	/*transition: all 0.5s;*/
+}
+
+
+/*input:focus{
+	border-bottom: 2px solid #15c983;
+	width: 18vw;
+	position: absolute;
+
+}*/
+
+
+.main-container{
+	position: absolute;
+	top: 10vh;
+	width: 25vw;
+	height: 75vh;
+	left: 37vw;
+	right: 37vw;
+	background-color: #eee;
+	box-shadow: -1px 8px 16px -8px rgba(0,0,0,1);
+
+}
+
+
+.text-box{
+	position: absolute;
+	width: 17vw;
+	height: 10vh;
+	text-align: center;
+	text-indent: 0;
+    color: #333;
+	transition: all 0.5s;
+
+	}
+
+
+.text-box:focus{
+	border-bottom: 2px solid #15c983;
+	width: 18vw;
+	position: absolute;
+	left: -200px;
+	text-indent: -12vw;
+
+	}
+
+
+.main-container-header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 18vh;
+    background-color: purple;
+    background: #EA3F3F;
+    color: #fff;
+    font-size: calc(200% + 0.25vw);
+    text-align: center;
+}
+
+.main-container-header p{
+font-size: 3.2vw;
+position: absolute;
+top: 6vh;
+left: 7.8vw;
+}
+
+
+
+#box-1{
+	top: 28vh;
+	left: 3.5vw;
+	font-size: calc(8px + 0.86vw);
+
+
+}
+
+#box-2{
+	top: 43vh;
+	left: 3.5vw;
+	font-size: calc(8px + 0.86vw);
+	text-indent: 1vw;
+	text-replace: text-indent 0.5s;
+}
+/*
+#box-3{
+    top: 40vh;
+	left: 3.5vw;
+	font-size: calc(8px + 0.86vw);
+	text-indent: 1vw;
+	text-replace: text-indent 0.5s;
+}
+
+#box-4{
+    top: 50vh;
+	left: 3.5vw;
+	font-size: calc(8px + 0.86vw);
+	text-indent: 1vw;
+	text-replace: text-indent 0.5s;
+}
+
+#box-5{
+    top: 60vh;
+	left: 3.5vw;
+	font-size: calc(8px + 0.86vw);
+	text-indent: 1vw;
+	text-replace: text-indent 0.5s;
+}*/
+
+#box-2:focus{
+	text-indent: -10vw;
+}
+/*
+#box-3:focus{
+	text-indent: -10vw;
+}
+
+#box-4:focus{
+	text-indent: -10vw;
+}
+
+#box-5:focus{
+	text-indent: -10vw;
+}*/
+
+
+.button{
+    position: relative;
+    top: 60vh;
+    left: 10vw;
+    outline: none;
+    background: #EA3F3F;
+    border: none;
+    /*border:  4px solid #EA3F3F;*/
+    padding: 0.9vw;
+    font-size: 1.4vw;
+    left: 9vw;
+    color: #fff;
+    box-shadow: -1px 4px 14px -5px rgba(0,0,0,1);
+
+    transition: all 0.3s;
+}
+
+.button:hover{
+	background-color: #ba2f2f;
+
+
+
+}
