@@ -1,0 +1,33 @@
+
+
+#header-logo{
+  padding-left: 20px;
+}
+.header-item{
+  padding-right: 40px;
+  font-size:   18px;
+  font-weight: normal;
+}
+#logo{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+#tshirt{
+  margin-top: 64px;
+}
+
+.row .col {
+  padding: 0;
+}
+.bag{
+  padding-top: 5px;
+}
+#kid{
+height: 99%;
+}
+.first{
+  margin-top: 64px;
+}
