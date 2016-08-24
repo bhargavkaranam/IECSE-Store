@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IECSE STORE</title>
+	<link rel="stylesheet" type="text/css" href="storestyle.css">
+ 	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+		var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex-1].style.display = "block"; 
+}
+	</script>
+</head>
+<body>
+<div class="header">
+	<div class="logo">
+		<img src="logo.png" class="logo1">
+	</div>	
+	<div class="searchbox"> 
+		<input type="text" name="storesearch" placeholder="SEARCH STORE">
+	</div>
+</div>
+<div class="storehead">
+	AN ONLINE STORE OF IECSE MERCHANDISE
+</div>
+<div class="iecse"> 
+	<img src="cover.jpg" class="iecseimg">
+</div>
+<div class="bodytext">
+	<div class="leftside">
+			CATEGORIES <div class="cat"> <br><br> T-Shirts <br> Hoodies <br> Stickers <br>Mugs</div>
+	</div>
+		
+	<div class="arrowlft">
+					<a class="w3-btn-floating" onclick="plusDivs(-1)"><img src="arrowlft.png" class="arrow"></a>
+	 </div>
+	 <div class="cont">
+					<div class="as"><img class="mySlides" src="images/1.jpg"></div>
+					<div class="as"><img class="mySlides" src="images/2.jpg"></div>
+					<div class="as"><img class="mySlides" src="images/3.jpg"></div>
+					<div class="as"><img class="mySlides"  src="images/4.jpg"></div>
+					<div class="as"><img class="mySlides" id="hid" src="images/5.jpg"></div>
+					<div class="as"><img class="mySlides" id="hid" src="images/6.jpg"></div>
+	 </div>
+	 
+<div class="arrowrgt">
+<a class="w3-btn-floating" onclick="plusDivs(+1)"><img src="arrowrgt.png" class="arrow"></div></a></div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
